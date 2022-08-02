@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let len = 12;
+        let br = 14;
+        let area = len * br;
+        document.write("Area of rectangle is " + area);
+
+        let message = "Good";
+        let name = "harsh";
+        alert(message);
+    </script>
+    <script>
+        //let message = "Welcome";
+        alert(message);
+        document.write(message + "<br>");
+        console.log(message)
+
+        let a=100;
+        let b=200;
+        let c=300;
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        document.write(c + "<br>");
+    </script>
+
+    // creating constant
+    // const user = "romi12";
+    // document.write(user + "<br>");
+    //user = "deepak12";//we canot chnge value so this not display
+
+    if(5>2){
+        document.write("inside block");
+        let city="delhi";
+        document.write(city + "<br>");
+        var x =20;
+        document.write(x + "<br>");
+    }
+    document.write(x + "<br>");//20 aayega var se krte hai toh bhar access hoskta
+    document.write(city + "<br>");//par yeh nhi hoga local rahyega
+    
+    var x=20;
+    var x=50;
+    document.write(x + "<br>");//var allow multiple value
+    //let nhi karta
+
+    //box
+    <script>
+        //alert
+        //window.alert("welcome");
+
+        //prompt box
+
+        // let name = prompt("enter name");
+        //alert(name)
+
+        let age = parseInt(prompt("enter name"));
+        alert(age);// parse int use for integer value for char kuch nhi
+        age=age+10;
+        alert(age);
+
+        //confirm box
+        //let choice = confirm("are you sure");
+        //alert(choice)
+
+        let ans = confirm("do you want to open google");
+        if(ans==true){
+            location.href="https://www.google.com";
+        }else{
+            alert("donot want to open google");
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
