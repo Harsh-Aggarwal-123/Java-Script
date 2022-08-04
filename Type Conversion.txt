@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // Type of conversion:
+    // 1. Implicit
+    // 2. Explict
+    <script>
+        let a = 12;
+        console.log(typeof a); // number
+        // <!-- conert to string -->
+        let as = String(a);
+        console.log(as);
+        console.log(typeof as);//string
+
+        // toString method
+        let number = 12345;
+        let ans = number.toString();
+        console.log(ans);
+        console.log(typeof ans);//string
+
+        // <!--Numeric Conversion-->
+        let value = "123435";
+        console.log(value + 95);//12343595
+
+        let ans1 = Number(value);
+        console.log(ans1);
+        console.log(typeof ans1);
+        console.log(ans1 + 95);
+
+        // undefined convert into Nan
+        // Nan into 0, true into 1, false into 0
+
+        console.log(Number(false)) //0
+        let t;// undefined
+        console.log(Number(t))// nan
+
+        // <!-- boolean conversion
+        let ex = "false";
+        console.log(typeof ex);// string  
+        
+        let ans2 = Boolean(ex);
+        console.log(typeof ans2);
+        console.log(ex);
+        console.log(ans2); 
+
+        let ex1 = 1;
+        console.log(typeof ex1);
+
+        let ans3 = Boolean(ex1);
+        console.log(ans3);// 1 converted to truye
+
+
+
+    </script>
+    
+</body>
+</html>
