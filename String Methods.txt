@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String important function</h1>
+    <script>
+        let s = "I love java script";
+        console.log(s);
+
+        //length
+        let len = s.length;
+        console.log(len);
+
+        //concat
+        let s1 = " and java";
+        // now concat
+        console.log(s + " " + s1);
+        // or
+        let ans = s.concat(s1);
+        console.log(ans);
+
+        // charAt(index) function
+        let ans1 = s.charAt(4);
+        console.log(ans1);
+
+        let x = s.indexOf("J");
+        console.log(x);
+
+        // uppercase()
+        console.log(s.toUpperCase());
+        console.log(s.toLowerCase());
+
+        //substring(start,end)
+        let ans2 = s.substring(2,6);
+        console.log(ans2);
+
+        //startwith()
+        // return true false
+        //casesensitive
+        console.log(s.startWith("I"));
+
+        //endwith
+        console.log(s.endWith("script"));
+
+        //spilt()
+        let ss = "I love java script";
+        let sp = ss.spilt(" ");
+        console.log(typeof sp);
+        console.log(sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+
+        // trim() remove spaces
+        name = "   Kapil  ";
+        let s3 = name.trim();
+        console.log(s3);
+
+    </script>
+</body>
+</html>
