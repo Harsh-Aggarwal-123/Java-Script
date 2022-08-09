@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ob = {
+            Name: 'Deepak',
+            Age: 21,
+            Job: 'Manager',
+            Salary: 8000,
+            "Last Name": "Jain",
+            // use double quotes when space bw two words
+
+            display: function()
+            {
+                console.log("Inside Function ");
+                console.log(this.Name);
+                console.log(this.Age);
+                console.log(this.Salary);
+            }
+        };
+        document.write(ob);
+        //access
+        document.write(ob.Name);
+        document.write(ob.Job);
+        //object[key]
+        document.write(ob["Name"]);
+        ob.display();
+
+        ///for in loop
+        for(let key in ob) {
+            document.write(key + " -->>>>----" + ob[key]);
+        }
+        ob["display"]()//you can call function like this
+        document.write(ob.name);
+
+        //change value of properties
+        ob.Name = "vaibhavi";
+        document.write(ob.name);
+        ob["Name"] = "shyam";
+        document.write(ob.name);
+
+        //add property
+        ob["Email"] = "abc@gmail.com";
+        document.write(ob);
+    </script>
+</body>
+</html>
